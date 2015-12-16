@@ -7,12 +7,12 @@
 
 var _gaq = _gaq || [];
 
-_gaq.push(['_setAccount', 'UA-xxxxxxxxx-x']);
+_gaq.push(['_setAccount', 'UA-42366544-4']);
 _gaq.push(['_trackPageview']);
 
 chrome.runtime.onMessage.addListener(function( request, sender, sendResponse ) {
-    if(request.action == "removeTrump"){
-        _gaq.push(['_trackEvent', 'removeTrump', 'removed']);
+    if(request.action == "removeJulio"){
+        _gaq.push(['_trackEvent', 'removeJulio', 'removed']);
     }
 });
 
